@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class='container'>
+    <h1>Data Download</h1>
+    
+    <table id="datasetTbl" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for p in site.pages %}
+            {% if p.category == "data" %}
+                <tr>
+                    <th scope="row">{{ p.index }}</th>
+                    <td>{{ p.title }}</td>
+                    <td>{{ p.description }}</td>
+                    <td><a href="{{ site.github.url }}/data/{{ p.filename }}">Download</a></td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+        </tbody>
+      </table>
+</div>

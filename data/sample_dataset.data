@@ -1,0 +1,8 @@
+---
+category: data
+index: 1
+filename: sample_dataset.csv
+title: Sample Dataset
+description: Sample Dataset for Downloading
+type: text/csv
+---

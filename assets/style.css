@@ -1,0 +1,19 @@
+body {
+	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333333;
+}
+
+.container-content {
+	margin-top: 4em;
+}
+
+.container {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a {
+	text-decoration: none;
+}
